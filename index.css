@@ -1,0 +1,85 @@
+/*CSS for huckleberry*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto;
+    
+}
+.container {
+    width: 100%;
+    margin: 2rem auto;
+    display: grid;
+    margin:0;
+    grid-template-columns: 1fr;
+}
+.header {
+    background-color: white;
+    text-align:left;
+    margin-bottom:0rem;
+    height: 382px;
+    width:100%;
+    margin:10px 10px 0 0px;
+    padding: 20px 20px 20px 40px;
+    
+   
+}
+.header h1 {
+        font-size: 2.5rem;
+        margin:1.5rem;
+        padding: 20px;
+     
+    }
+
+.header p {
+        font-size: 1.5;
+        margin:1.0rem;
+       text-align: justify;
+
+}
+    .header .highlight {
+        color: green;
+        font-weight: bold;
+    }
+.info-box {
+        display:flex;
+        flex-wrap: wrap;
+        background: #f0f0f0;
+        padding: 1.5rem;
+        margin:90px 150px 100px 250px;
+        width:808px;
+        height:312px;
+        border-bottom:8px solid #999999;
+    }
+
+.info-box h2 {
+            background: #ffce00;
+            padding:1rem;
+            margin: -1.0rem -1.5rem -1.5rem -2.0rem;
+            font-size: 1.5rem;
+            color: #000;
+            
+    
+            
+        } p {
+                font-size: 1rem;
+                padding:20px;
+                line-height: 1.5rem;
+                font-weight: lighter
+
+}
+
+.grey-element{
+    background-color: #000;
+    border: solid#999999;
+    width:100%;
+
+}
+.main-grid {
+    background-color: #666666;
+}
+.yellow-container {
+   border-bottom:8px solid#c4b70a;
+}
