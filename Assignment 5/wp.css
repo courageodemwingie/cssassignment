@@ -11,6 +11,7 @@
     --freelance-pg-height: 795px;
     --btn-color:#038E7D;
     --bordersize: #E0E6EA;
+    --contentwidth:
 }
 html {
     font-size: 1rem;
@@ -19,11 +20,12 @@ html {
     margin:0;
     box-sizing: border-box;
     padding: 0;
-}
+}   
 
 body{
    font-family:sans-serif;
    padding:0;
+   margin:0;
   
 }
 .container {
@@ -59,11 +61,13 @@ body{
 
 }
 .header nav ul li:last-child{
-    width: ;
+    width: 100%;
 
 }
 
-main{
+.checkout-container main {
     width:var(--contentwidth);
+    display:flex;
+    grid-template-columns: 1fr var(--contentwidth);
 
 }
