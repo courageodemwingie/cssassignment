@@ -48,7 +48,7 @@ body{
 
 .text-container {
     background-color:white;
-    padding:1rem;
+    padding:1.5rem;
 }
 .novus-header {
     font-weight:bold;
@@ -63,6 +63,13 @@ body{
 
 p {
     font-size:1.5rem;
-    line-height: 1.1;
-    margin:0;
+    line-height: 1.5;
+    margin-bottom:1rem;
 }
+@media screen and (max-width: 768px) {
+    .sub-container {
+        width: 90%;
+        padding: 0.8rem;
+    }
+}
+@media screen and (max-width: )
