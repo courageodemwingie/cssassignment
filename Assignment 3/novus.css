@@ -15,8 +15,8 @@ body{
 }
 
 .sub-container{
-    background-color:white;
-    border-radius: 8px;
+    background-color: #a7a2c3;
+    border-radius: 7px;
     width:40%;
     padding:1rem;
     position: relative;
@@ -28,17 +28,22 @@ body{
     font-weight: 700;
     font-size: 1.2rem;
     padding:5px 20px;
-    border-radius: 5px 10px;
-    top:-10px;
-    left:-30px;
-    position: relative;
+    border-radius: 5px 10px 10px 5px;
+    top:30px;
+    left:-10px;
+    position: absolute;
 
 }
+
 .watch-foto {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     margin:0;
+}
+.foto-box {
+    width:
 }
 
 .text-container {
