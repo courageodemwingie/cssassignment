@@ -1,63 +1,140 @@
-body {
-    background-color: rgb(39, 39, 39);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-.main-con {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+:root{
+    --projectwidth: 1440px;
+    --projectheight:1170px;
+    --freelancer-pg-width:312;
+    --navcolor: #1D2C3C;
+    --nav-layout-width:1360px;
+    --nav-layout-height:73px;
+    --bg-color:#F5F8FA;
+    --checkout-pg:#FFFFFF;
+    --checkout-box-width:892px;
+    --checkout-box-height:795px;
+    --freelancebg:#1179BF;
+    --freelance-pg-height: 795px;
+    --freelance-pg-width:312px;
+    --btn-color:#038E7D;
+}
+html {
+    
     width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    font-size: 1rem;
+}
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding:0;
+}   
+
+body{
+   font-family:sans-serif;
+   padding:0;
+   margin:0;
+}
+  
+main{
+    margin:100px;
+ 
 }
 
-.card-con {
-    display: flex;
-    flex-direction: column;
+
+
+
+
+.head-box{
+    display:flex;
     align-items: center;
-    background-color: #fff;
-    width: 40%;
-    padding: 70px 30px 30px 30px;
-    border-radius: 7px;
-    position: relative;
-    overflow: hidden; /* Prevents content from poking out */
+    justify-content: space-between;
+    width:100%;
+    padding:1.2rem 0;
+    border-bottom: 1px solid rgb(128, 128, 128,0.3);
+
 }
 
-.pink-title {
-    background-color: rgb(255, 21, 130);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 6px;
-    width: 70%;
-    height: 20%;
+.head-box nav ul li {
+    display: inline;
+    margin-inline:1rem;
+    color:var(--navcolor)
+    
+}
+
+.head-box nav ul li  a:link
+.head-box nav ul li  a:visited{
+    display: inline;
+    margin-inline:10px;
+    text-decoration: none;
+    color: var(--navcolor);
     font-weight: 800;
-    font-size: 1.5rem;
-    padding: 20px 35px;
-    position: absolute;
-    top: -20px; 
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1; /* Ensures the title stays above the content */
+    font-size: .88rem;
+
 }
 
-.otter-content {
+.header nav ul li:last-child{
+    width: 100%;
+
+}
+.checkout-layout {
+    gap: 0px;
     display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0;
-    margin-top: 40px; /* Adds space below the pink-title */
+    justify-content: center;
+    align-items: center;
+    background-color: var(--checkout-pg);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.checkout-pg {
+    width: 892px;
+    height: 845px;
+    width: var(--checkout-box-width);
+    height: var(--checkout-box-height);
+    flex: 2;
+    padding:2rem;
+    background-color: var(--checkout-pg);
+   
+}
+.checkout-header {
+    font-family:sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-bottom:1px solid rgb(128, 128, 128,0.5);
+
+
+}
+.personal-info-con {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-bottom:1px solid rgb(128, 128, 128,0.5);
+    display: grid;
+    grid-template-columns: row;
+    align-items: center;
+    
+ }
+
+.personal-info-con h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+
+   
+  }
+
+.number-ctn {
+
 }
 
-p {
-    background-color: #fbfbfb;
-    padding: 30px;
-    margin: 0; /* Remove margin to avoid extra space */
-    width: 100%;
-    text-align: justify;
-    font-weight: 600; /* Makes the text bolder */
-    line-height: 1.6; /* Improves readability and fills space */
+.freelancer-box {
+    flex: 1;
+    flex-direction: column;
+    width: var(--freelance-pg-width);
+    height: var(--freelance-pg-height);
+    background-color: var(--freelancebg);
+    padding:2rem;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+       

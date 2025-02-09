@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #e3fdfd, #cbf1f5);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #065a82;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #1282a2;
+}
+
+
+.bg-ctn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto); 
+    gap: 2rem;
+    width: 100%;
+    max-width: 900px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+
+.click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    width: 100%;
+    background: #2EC4B6;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.click:hover {
+    background: #1da598;
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+
+.bg-ctn ol {
+    list-style: none;
+    display: contents;
+    padding: 0;
+}
+
+.bg-ctn li {
+    display: flex;
+    justify-content: center;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>Courage Odemwingie</h1>
+            <p class="id">Altschool ID:  ALT/SOE/024/4978</p>
+            <h2></h2>
+        </div>
+    </header>
+    <main>
+        <div class="bg-ctn">
+            <div class="sub-ctn-1">
+                <ol>
+                    <li>
+                        <a class="click" href="/Assignment 1/otter.html" target="_blank">Assignment 1</a>
+                       
+                    </li>
+                    <li>
+                        <a class="click" href="/Assignment 2/huckleberry.html" target="_blank">Assignment 2</a>
+                 
+                    </li>
+                    <li>
+                        <a class="click" href="/Assignment 3/novus.html" target="_blank">Assignment 3</a>
+                     
+                    </li>
+            </div>
+            <div class="sub-ctn-2">
+                <ol>
+                    <li>
+                        <a class="click" href="/Assignment 4/webdev.html" target="_blank">Assignment 4</a>
+                       
+                    </li>
+                    <li>
+                        <a class="click" href="/Assignment 5/wp.html" target="_blank">Assignment 5</a>
+                 
+                    </li>
+                    <li>
+                        <a class="click" href="/Assignment 6/scissors.html" target="_blank">Assignment </a>
+                     
+                    </li>
+            </div>     
+
+        </div>
+    </main>
+    
+</body>
+</html>

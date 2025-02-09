@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>wppusher</title>
     <link rel="stylesheet" href="wp.css" />
     <link
       rel="stylesheet"
@@ -11,10 +11,9 @@
     />
   </head>
   <body>
-    <div class="container">
-      <header class="header">
-        <div>
-          <img src="./assets/image/wppusher-logo copy.png" />
+    <header class="head-box">
+        <div class="logo">
+          <img src="/assets/image/wppusher-logo copy.png" />
         </div>
         <nav>
           <ul>
@@ -25,32 +24,35 @@
             <li><a href="#"></a>account</li>
           </ul>
         </nav>
-      </header>
-      <main class="checkout-container">
-        <div class="main-panel">
-          <div>
+    </header>
+    <main class="main">
+      <div class="checkout-layout">
+        <div class="checkout-pg">
+          <div class="checkout-header">
             <h2>Checkout</h2>
           </div>
           <div class="personal-info-con">
-            <h4><span>1</span>Your Basic Information</h4>
-            <form action="">
-              <div>
+            <div class="basic-ctn">
+              <h3><span class="number">1</span>Your Basic Information</h3>
+            </div>
+            <form action="" class="form-1">
+              <div class="form-input-row">
                 <label for="firstname">first Name</label>
                 <input type="text" placeholder="joe" id="firstName" />
               </div>
-              <div>
+              <div class="form-input-row">
                 <label for="Lastname">Last Name</label>
                 <input type="text" placeholder="john" id="LastName" />
               </div>
-              <div>
+              <div class="form-input-row">
                 <label for="email">Email</label>
                 <input type="text" placeholder="email" id="email" />
               </div>
             </form>
           </div>
-          <div>
-            <h4><span>2</span>Your Payment information</h4>
-            <form action="">
+          <div class="payment-ctn">
+            <h3><span class="Number">2</span>Your Payment information</h3>
+            <form action="" class="form-2">
               <div class="card-input">
                 <label for="creditcard">Credit Card</label>
                 <input type="text" placeholder="Card Number" />
@@ -59,19 +61,15 @@
               </div>
             </form>
           </div>
-          <div>
-            <div>
-              <button>Buy WP Pusher</button>
-            </div>
-            <div>
-              <p class="help-text">
-                Need any help? <a href="#">Contact support</a>
-              </p>
-              <p class="powered-by">Powered by <b>Stripe</b></p>
-            </div>
+          <div class="Pusher">
+              <div class="btn-ctn"><button>Buy WP Pusher</button></div>
+                <p class="help-text">
+                  Need any help? <a href="#">Contact support</a>
+                </p>
+                <p class="powered-by">Powered by <b>Stripe</b></p>
           </div>
         </div>
-        <div class="side-panel">
+        <div class="freelancer-box">
           <div>
             <h1>Freelancer</h1>
             <i class="fa-solid fa-dollar-sign"></i><span>99</span>
@@ -87,13 +85,19 @@
             <p class="upgrade-text">
               Need 20 client sites? <a href="#">Switch to the Agency plan.</a>
             </p>
-            <span
-              >FTP is horrible to deal with. <b>WP Pusher</b> solves that issue,
-              and the customer support is awesome!</span
-            >
+            <span id="em">FTP is horrible to deal with. <b>WP Pusher</b> solves that issue,
+              and the customer support is awesome!</span>
+          </div>
+          <div class="bitmap">
+            <img src="/assets/image/Bitmap.png" alt="bitmap-foto">
           </div>
         </div>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
+  <footer>
+    <div class="footer-ctn">
+      <p>2018 WP pusher IVS . Terms of Service</p>
+    </div>
+  </footer>
 </html>
